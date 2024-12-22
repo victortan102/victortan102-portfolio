@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>HomeDefender - Raspberry Pi Home Security System</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    
+    <!-- Favicons -->
+    <link href="../../assets/img/profile-img.png" rel="icon">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <!-- Main CSS File -->
+    <link href="../../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+    <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+        
+        <div class="profile-img">
+            <img src="../../assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
+        </div>
+        
+        <a href="../../index.html" class="logo d-flex align-items-center justify-content-center">
+            <h1 class="sitename">Victor Tan</h1>
+        </a>
+        
+        <div class="social-links text-center">
+            <a href="https://github.com/victortan102" class="github"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/victor-tan102/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+        
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="../../index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+                <li><a href="../../index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+                <li><a href="../../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+                <li><a href="../../index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+                <!-- <li><a href="../../index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+                <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="#">Dropdown 1</a></li>
+                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="#">Deep Dropdown 1</a></li>
+                                <li><a href="#">Deep Dropdown 2</a></li>
+                                <li><a href="#">Deep Dropdown 3</a></li>
+                                <li><a href="#">Deep Dropdown 4</a></li>
+                                <li><a href="#">Deep Dropdown 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dropdown 2</a></li>
+                        <li><a href="#">Dropdown 3</a></li>
+                        <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li> -->
+            </ul>
+        </nav>
+    
+    </header>
+    
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">HomeDefender - Raspberry Pi Home Security System</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../index.html#portfolio">Portfolio</a></li>
+                        <li>Software</li>
+                        <li class="current">HomeDefender - Raspberry Pi Home Security System</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+        
+        <!-- Portfolio Details Section -->
+        <section id="portfolio-details" class="portfolio-details section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+                            <script type="application/json" class="swiper-config">
+                                {
+                                "loop": true,
+                                "speed": 600,
+                                "autoplay": {
+                                    "delay": 5000
+                                },
+                                "slidesPerView": "auto",
+                                "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                }
+                                }
+                            </script>
+                            
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/thumbnail.png" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/thumbnail.png" alt="thumbnail">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-poster.png" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-poster.png" alt="home-defender-poster">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-client-hub-communication.png" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-client-hub-communication.png" alt="home-defender-client-hub-communication">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-hub-client-communication.png" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-hub-client-communication.png" alt="home-defender-hub-client-communication">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-topology.png" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-topology.png" alt="home-defender-topology">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-schematic-client.png" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-schematic-client.png" alt="home-defender-schematic-client">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-schematic-hub.png" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-schematic-hub.png" alt="home-defender-schematic-hub">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <a href="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-setup.jpg" 
+                                        class="glightbox" 
+                                        data-gallery="home-defender-gallery">
+                                        <img src="../../assets/img/portfolio/hardware/home-defender-INF1006/home-defender-setup.jpg" alt="home-defender-setup">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Project Information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Hardware, Raspberry Pi</li>
+                                <li><strong>Language</strong>: Python</li>
+                                <li><strong>Project Date</strong>: May 2024 - July 2024</li>
+                                <li>
+                                    <a href="https://youtu.be/Sgz56tbwXZ8" target="_blank">
+                                        <button class="youtube-button">
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>Watch on YouTube</span>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                            <h2>Project Introduction</h2>
+                            <p>
+                                Our Home Security Application, HomeDefender, is designed to provide enhanced security 
+                                for your home without the need for costly security systems. Our application integrates 
+                                various security features, including real-time alerts, to ensure the safety and security 
+                                of homeowners. This comprehensive and cost-effective solution ensures your home is always 
+                                protected, giving you peace of mind no matter where you are.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+        
+        <!-- Additional Details Section -->
+        <section id="additional-details" class="portfolio-details section">
+            <div class="container portfolio-description" data-aos="fade-up" data-aos-delay="100">
+                <h2>🗝️ Key Features of Application</h2>
+                <ol>
+                    <li>
+                        <strong>Real-Time Camera Live Feed</strong>
+                        <ul>
+                            <li>Integrated a live camera feed displayed via a responsive web interface, allowing users to monitor activity in real time.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Multi-Factor Access Control</strong>
+                        <ul>
+                            <li>Supports RFID card authentication and keypad-based PIN entry for secure door access.</li>
+                            <li>OTP generation and verification integrated through the dashboard and Telegram bot for added security.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Motion Detection and Alarm Activation</strong>
+                        <ul>
+                            <li>Utilizes motion sensors to detect unauthorized activity and trigger alarms.</li>
+                            <li>Sends notifications for motion events, with optional Telegram alerts.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Dashboard for Centralized Control</strong>
+                        <ul>
+                            <li>Intuitive Flask-based web dashboard featuring buttons to lock/unlock doors, activate/deactivate motion sensors, and generate OTPs.</li>
+                            <li>Displays activity logs and provides a link to view the live camera stream.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Dynamic MQTT Communication</strong>
+                        <ul>
+                            <li>Implements MQTT protocol for seamless communication between devices and sensors.</li>
+                            <li>Publishes and subscribes to topics for real-time status updates and controls.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Embedded System Integration</strong>
+                        <ul>
+                            <li>Uses Raspberry Pi GPIO pins for connecting sensors, LEDs, buzzer, servo motor, and RFID reader.</li>
+                            <li>Integrates with PiCamera for video streaming.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Responsive Web Design</strong>
+                        <ul>
+                            <li>Designed with Bootstrap and custom CSS for a modern and responsive user interface.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Database and Notification Support</strong>
+                        <ul>
+                            <li>Connected to a MySQL database for managing RFID, PIN, and OTP records.</li>
+                            <li>Optional Telegram bot integration for immediate security updates.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Enhanced Security Features</strong>
+                        <ul>
+                            <li>Auto-locks the door after access, with an alarm system for unauthorized attempts.</li>
+                            <li>Handles invalid access gracefully with notifications and visual alerts.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Extensible and Modular Codebase</strong>
+                        <ul>
+                            <li>Modular Python implementation with dedicated classes for client and hub functionalities.</li>
+                            <li>Extensible architecture for future feature additions like facial recognition or cloud integration.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section><!-- /Additional Details Section -->
+    </main>
+    
+    <footer id="footer" class="footer position-relative light-background">
+    </footer>
+    
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i>
+    </a>
+    
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Glightbox -->
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            zoomable: true,
+        });
+    </script>
+    
+    <!-- Main JS File -->
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
