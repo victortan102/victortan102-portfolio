@@ -726,6 +726,19 @@ section,
   background-color: var(--accent-color);
 }
 
+.skills .skill-title {
+  color: var(--heading-color);
+  font-size: 23px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skills .section-title {
+  padding-bottom: 0px;
+  position: relative;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
