@@ -1370,7 +1370,7 @@ section,
   height: 60%;
 }
 
-/* From Uiverse.io by vikramsinghnegi */ 
+/* YouTube and GitHub Buttons */ 
 button.youtube-button {
   font-family: inherit;
   font-size: 18px;
@@ -1386,30 +1386,50 @@ button.youtube-button {
   transition: all 0.3s;
 }
 
-button.youtube-button:hover {
+button.github-button {
+  font-family: inherit;
+  font-size: 18px;
+  background: linear-gradient(to bottom, #24292e 0%, #333 100%);
+  color: white;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+button.youtube-button:hover,
+button.github-button:hover {
   transform: translateY(-3px);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-button.youtube-button:active {
+button.youtube-button:active,
+button.github-button:active {
   transform: scale(0.95);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-button.youtube-button span {
+button.youtube-button span,
+button.github-button span {
   display: block;
   margin-left: 0.4em;
   transition: all 0.3s;
 }
 
-button.youtube-button svg {
+button.youtube-button svg,
+button.github-button svg {
   width: 18px;
   height: 18px;
   fill: white;
   transition: all 0.3s;
 }
 
-button.youtube-button .svg-wrapper {
+button.youtube-button .svg-wrapper, 
+button.github-button .svg-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1421,11 +1441,17 @@ button.youtube-button .svg-wrapper {
   transition: all 0.3s;
 }
 
-button.youtube-button:hover .svg-wrapper {
+button.youtube-button:hover .svg-wrapper,
+button.github-button:hover .svg-wrapper {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-button.youtube-button:hover svg {
+button.youtube-button:hover svg,
+button.github-button:hover svg {
   transform: rotate(45deg);
 }
 
+/* Class to hide an element */
+.hide {
+  display:none;  
+}
