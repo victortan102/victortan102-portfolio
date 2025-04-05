@@ -802,6 +802,52 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Licenses and Certifications Section
+--------------------------------------------------------------*/
+
+#certification-grid .col-lg-4,
+#certification-grid .col-md-6 {
+  display: flex;
+}
+
+#certification-grid .resume-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+#certification-grid .resume-item h4,
+#certification-grid .resume-item h5,
+#certification-grid .resume-item p {
+  margin-bottom: 10px;
+}
+
+#certification-grid .resume-item h4 {
+  min-height: 48px;
+}
+
+#certification-grid .resume-item .view-cert-btn {
+  margin-top: auto; /* Push button to the bottom */
+}
+
+#certification-grid .view-cert-btn {
+  display: inline-block;
+  width: auto;
+  align-self: flex-start;
+  border: 1px solid rgb(20, 157, 221);
+  color: rgb(20, 157, 221);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+#certification-grid .view-cert-btn:hover {
+  background-color: rgb(20, 157, 221);
+  color: white;
+}
+
+/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio .portfolio-filters {
