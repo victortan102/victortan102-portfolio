@@ -748,10 +748,11 @@ section,
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: -14px;
 }
 
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0 0 20px 30px;
   margin-top: -2px;
   border-left: 2px solid var(--accent-color);
   position: relative;
@@ -786,15 +787,17 @@ section,
   padding-bottom: 0;
 }
 
-.resume .resume-item::before {
-  content: "";
+.resume .resume-icon {
   position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: var(--background-color);
+  width: 50px;
+  height: 50px;
+  left: -26px;
+  top: -10px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background-color);
   border: 2px solid var(--accent-color);
 }
 
