@@ -515,7 +515,8 @@
                     <!-- CERTIFICATION #12: AWS Certified Developer – Associate -->
                     <div class="col-lg-4 col-md-6">
                         <div class="resume-item">
-                            <a href="https://aws.amazon.com/certification/certified-developer-associate/" target="_blank">
+                            <a href="https://aws.amazon.com/certification/certified-developer-associate/"
+                                target="_blank">
                                 <span class="resume-icon"
                                     style="background-image: url('assets/img/resume/AWS-Certified-Developer-Associate.png');"></span>
                             </a>
@@ -535,7 +536,8 @@
                     <!-- CERTIFICATION #11: Ultimate AWS Certified Developer Associate 2025 DVA-C02 -->
                     <div class="col-lg-4 col-md-6">
                         <div class="resume-item">
-                            <a href="https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/" target="_blank">
+                            <a href="https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/"
+                                target="_blank">
                                 <span class="resume-icon"
                                     style="background-image: url('assets/img/resume/Udemy-Logo.png');"></span>
                             </a>
@@ -786,8 +788,8 @@
                                     <a href="assets/img/portfolio/software/clearcare-web-application/thumbnail.png"
                                         title="ClearCare Web Application" data-gallery="portfolio-gallery-product"
                                         class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/clearcare.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
+                                    <a href="{{ url_for('software.clearcare') }}" title="More Details"
+                                        class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
                         </div><!-- End Portfolio Item -->
@@ -803,8 +805,8 @@
                                         title="MediMate Medicine Reminder Android App"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/medimate.html" title="More Details" class="details-link"><i
-                                            class="bi bi-link-45deg"></i></a>
+                                    <a href="{{ url_for('software.medimate') }}" title="More Details"
+                                        class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
                         </div><!-- End Portfolio Item -->
@@ -820,7 +822,7 @@
                                         title="Caregiver-Elderly Medicine Reminder Android App"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/caregiver-elderly-medicine-app.html" title="More Details"
+                                    <a href="{{ url_for('software.caregiver_app') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -838,7 +840,7 @@
                                         title="KirbyEats - A Food Blog Web Application"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/kirbyeats-food-blog.html" title="More Details"
+                                    <a href="{{ url_for('software.kirbyeats') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -856,7 +858,7 @@
                                         title="A Automonous Robotic Car powered by Raspberry Pi Pico W"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/hardware/robotic-car.html" title="More Details"
+                                    <a href="{{ url_for('hardware.robotic_car') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -874,7 +876,7 @@
                                         title="BusRouter - Hotel Bus Route Optimizer"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/bus-router.html" title="More Details"
+                                    <a href="{{ url_for('software.bus_router') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -892,7 +894,7 @@
                                         title="HomeDefender - Raspberry Pi Home Security System"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/hardware/homedefender-raspberrypi.html" title="More Details"
+                                    <a href="{{ url_for('hardware.homedefender') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -909,7 +911,7 @@
                                     <a href="assets/img/portfolio/software/chinese-idiom-game-INF1009/chinese-idiom-game-gameplay.png"
                                         title="Chinese Idiom Game 成语游戏" data-gallery="portfolio-gallery-product"
                                         class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/chinese-idiom-game.html" title="More Details"
+                                    <a href="{{ url_for('software.idiom_game') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -926,7 +928,7 @@
                                     <a href="assets/img/portfolio/software/npng-fitness-INF1005/2-npng-fitness-home-closeup.png"
                                         title="NPNG Fitness Web Application" data-gallery="portfolio-gallery-product"
                                         class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/npng-fitness.html" title="More Details"
+                                    <a href="{{ url_for('software.npng_fitness') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -944,7 +946,7 @@
                                         title="HDB Resale Flat Price Analysis Python Application"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/hdb-resale-flat-analysis.html" title="More Details"
+                                    <a href="{{ url_for('software.hdb_analysis') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -962,8 +964,8 @@
                                         title="TinyCircuits Language Translation Device"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/hardware/tinycircuits-language-translation-device.html"
-                                        title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                                    <a href="{{ url_for('hardware.translation_device') }}" title="More Details"
+                                        class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
                         </div><!-- End Portfolio Item -->
@@ -981,7 +983,7 @@
                                         title="ASREA - Airside Safety Risk Evaluation VR Application"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/asrea-vr-application.html" title="More Details"
+                                    <a href="{{ url_for('software.asrea_vr') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -999,7 +1001,7 @@
                                         title="MyEMS - Employee Management System Android App"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/myems-employee-management-system.html" title="More Details"
+                                    <a href="{{ url_for('software.myems') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -1016,7 +1018,7 @@
                                     <a href="assets/img/portfolio/software/farm-monitoring-system-SNINT/6-farm-system-new-block.png"
                                         title="Farm Monitoring System" data-gallery="portfolio-gallery-product"
                                         class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/farm-monitoring-system.html" title="More Details"
+                                    <a href="{{ url_for('software.farm_monitoring') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -1033,7 +1035,7 @@
                                     <a href="assets/img/portfolio/hardware/smart-aquaponics-system-IOTP/smart-aquaponics-architechural-diagram.jpg"
                                         title="Smart Aquaponics System" data-gallery="portfolio-gallery-product"
                                         class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/hardware/smart-aquaponics-system.html" title="More Details"
+                                    <a href="{{ url_for('hardware.smart_aquaponics') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -1051,7 +1053,7 @@
                                         title="SME Electronics - Electronics Store ASP.NET Web Application"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/sme-electronics-store.html" title="More Details"
+                                    <a href="{{ url_for('software.sme_store') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -1068,7 +1070,7 @@
                                     <a href="assets/img/portfolio/hardware/smart-bathroom-water-heater-ECAPP/smart-water-heater-closeup.png"
                                         title="Smart Bathroom Water Heater" data-gallery="portfolio-gallery-product"
                                         class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/hardware/smart-water-heater.html" title="More Details"
+                                    <a href="{{ url_for('hardware.smart_water_heater') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>
@@ -1086,7 +1088,7 @@
                                         title="Temasek Pizzas - A Pizza Ordering Application"
                                         data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                                             class="bi bi-zoom-in"></i></a>
-                                    <a href="pages/software/temasek-pizzas.html" title="More Details"
+                                    <a href="{{ url_for('software.temasek_pizzas') }}" title="More Details"
                                         class="details-link"><i class="bi bi-link-45deg"></i></a>
                                 </div>
                             </div>

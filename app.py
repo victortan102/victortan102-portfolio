@@ -5,7 +5,7 @@ from routes.software import software_bp
 from routes.hardware import hardware_bp
 
 
-app = Flask(__name__, template_folder="pages")
+app = Flask(__name__, template_folder="pages", static_folder="assets")
 
 
 # Register blueprints
