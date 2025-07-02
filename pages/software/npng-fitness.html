@@ -2,83 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>NPNG Fitness Web Application</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="../../assets/img/profile-img.png" rel="icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="../../assets/css/main.css" rel="stylesheet">
+    <!-- Include common head -->
+    {% include 'common/head.html' %}
 </head>
 
 <body class="portfolio-details-page">
-    <header id="header" class="header dark-background d-flex flex-column">
-        <i class="header-toggle d-xl-none bi bi-list"></i>
 
-        <div class="profile-img">
-            <img src="../../assets/img/profile-img.png" alt="" class="img-fluid rounded-circle">
-        </div>
-
-        <a href="../../index.html" class="logo d-flex align-items-center justify-content-center">
-            <h1 class="sitename">Victor Tan</h1>
-        </a>
-
-        <div class="social-links text-center">
-            <a href="https://github.com/victortan102" class="github"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/victor-tan102/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        </div>
-
-        <nav id="navmenu" class="navmenu">
-            <ul>
-                <li><a href="../../index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
-                <li><a href="../../index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
-                <li><a href="../../index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-                <li><a href="../../index.html#certifications"><i class="bi bi-award navicon"></i> Certifications</a>
-                </li>
-                <li><a href="../../index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-                <!-- <li><a href="../../index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
-                <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Dropdown 1</a></li>
-                                <li><a href="#">Deep Dropdown 2</a></li>
-                                <li><a href="#">Deep Dropdown 3</a></li>
-                                <li><a href="#">Deep Dropdown 4</a></li>
-                                <li><a href="#">Deep Dropdown 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li> -->
-            </ul>
-        </nav>
-
-    </header>
+    <!-- Include common header -->
+    {% include 'common/header.html' %}
 
     <main class="main">
         <!-- Page Title -->
@@ -87,8 +20,8 @@
                 <h1 class="mb-2 mb-lg-0">NPNG Fitness Web Application</h1>
                 <nav class="breadcrumbs">
                     <ol>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../../index.html#portfolio">Portfolio</a></li>
+                        <li><a href="{{ url_for('home.index') }}">Home</a></li>
+                        <li><a href="{{ url_for('home.index') }}#portfolio">Portfolio</a></li>
                         <li>Software</li>
                         <li class="current">NPNG Fitness Web Application</li>
                     </ol>
@@ -102,107 +35,94 @@
                 <div class="row gy-4">
                     <div class="col-lg-8">
                         <div class="portfolio-details-slider swiper init-swiper">
-                            <script type="application/json" class="swiper-config">
-                                {
-                                "loop": true,
-                                "speed": 600,
-                                "autoplay": {
-                                    "delay": 5000
-                                },
-                                "slidesPerView": "auto",
-                                "pagination": {
-                                    "el": ".swiper-pagination",
-                                    "type": "bullets",
-                                    "clickable": true
-                                }
-                                }
-                            </script>
+
+                            {% include 'common/swiper-config.html' %}
 
                             <div class="swiper-wrapper align-items-center">
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/npng-fitness-banner.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/npng-fitness-banner.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/thumbnail.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/thumbnail.png') }}"
                                             alt="thumbnail">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/1-npng-fitness-home.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/1-npng-fitness-home.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/2-npng-fitness-home-closeup.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/2-npng-fitness-home-closeup.png') }}"
                                             alt="npng-fitness-home">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/3-npng-fitness-about.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/3-npng-fitness-about.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/4-npng-fitness-about-closeup.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/4-npng-fitness-about-closeup.png') }}"
                                             alt="npng-fitness-about">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/5-npng-fitness-shop.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/5-npng-fitness-shop.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/6-npng-fitness-shop-closeup.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/6-npng-fitness-shop-closeup.png') }}"
                                             alt="npng-fitness-shop">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/7-npng-fitness-blog.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/7-npng-fitness-blog.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/8-npng-fitness-blog-closeup.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/8-npng-fitness-blog-closeup.png') }}"
                                             alt="npng-fitness-blog">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/11-npng-fitness-mealplan-3.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/11-npng-fitness-mealplan-3.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/12-npng-fitness-mealplan-closeup.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/12-npng-fitness-mealplan-closeup.png') }}"
                                             alt="npng-fitness-mealplan">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/9-npng-fitness-mealplan-1.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/9-npng-fitness-mealplan-1.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/10-npng-fitness-mealplan-2.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/10-npng-fitness-mealplan-2.png') }}"
                                             alt="npng-fitness-mealplan">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/13-npng-fitness-cart.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/13-npng-fitness-cart.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/13-npng-fitness-cart.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/13-npng-fitness-cart.png') }}"
                                             alt="npng-fitness-cart">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/14-npng-fitness-payment.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/14-npng-fitness-payment.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/14-npng-fitness-payment.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/14-npng-fitness-payment.png') }}"
                                             alt="npng-fitness-payment">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/15-npng-fitness-myorders.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/15-npng-fitness-myorders.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/16-npng-fitness-myorders-closeup.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/16-npng-fitness-myorders-closeup.png') }}"
                                             alt="npng-fitness-myorders">
                                     </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <a href="../../assets/img/portfolio/software/npng-fitness-INF1005/17-npng-fitness-contact.png"
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/17-npng-fitness-contact.png') }}"
                                         class="glightbox" data-gallery="npng-fitness-gallery">
-                                        <img src="../../assets/img/portfolio/software/npng-fitness-INF1005/17-npng-fitness-contact.png"
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/npng-fitness-INF1005/17-npng-fitness-contact.png') }}"
                                             alt="npng-fitness-contact">
                                     </a>
                                 </div>
@@ -291,41 +211,8 @@
         </section><!-- /Additional Details Section -->
     </main>
 
-    <footer id="footer" class="footer position-relative light-background">
-    </footer>
-
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i>
-    </a>
-
-    <!-- Preloader -->
-    <div id="preloader"></div>
-
-    <!-- Vendor JS Files -->
-    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/vendor/php-email-form/validate.js"></script>
-    <script src="../../assets/vendor/aos/aos.js"></script>
-    <script src="../../assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="../../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Glightbox -->
-    <script>
-        const lightbox = GLightbox({
-            selector: '.glightbox',
-            touchNavigation: true,
-            loop: true,
-            zoomable: true,
-        });
-    </script>
-
-    <!-- Main JS File -->
-    <script src="../../assets/js/main.js"></script>
+    <!-- Footer -->
+    {% include 'common/footer.html' %}
 </body>
 
 </html>
