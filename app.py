@@ -15,4 +15,4 @@ app.register_blueprint(hardware_bp, url_prefix="/hardware")
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
