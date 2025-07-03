@@ -23,46 +23,132 @@
             <li><a href="{{ url_for('home.index') }}#about"><i class="bi bi-person navicon"></i> About</a></li>
             <li><a href="{{ url_for('home.index') }}#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a>
             </li>
-            <li><a href="{{ url_for('home.index') }}#certifications"><i class="bi bi-award navicon"></i>
-                    Certifications</a></li>
+            <li>
+                <a href="{{ url_for('home.index') }}#certifications">
+                    <i class="bi bi-award navicon"></i>Certifications
+                </a>
+            </li>
             <li class="dropdown"><a href="{{ url_for('home.index') }}#portfolio">
                     <i class="bi bi-images navicon"></i><span>Portfolio</span>
                     <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                     <li class="dropdown"><a href="{{ url_for('home.index') }}#portfolio">
-                            <span>Software</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <i class="bi bi-code-slash navicon"></i><span>Software</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="{{ url_for('software.clearcare') }}">ClearCare Web Application</a></li>
-                            <li><a href="{{ url_for('software.medimate') }}">MediMate Android App</a></li>
-                            <li><a href="{{ url_for('software.caregiver_app') }}">Caregiver-Elderly Medicine Reminder
-                                    Android App</a></li>
-                            <li><a href="{{ url_for('software.kirbyeats') }}">KirbyEats Food Blog</a></li>
-                            <li><a href="{{ url_for('software.bus_router') }}">BusRouter Route Optimizer</a></li>
-                            <li><a href="{{ url_for('software.idiom_game') }}">Chinese Idiom Game</a></li>
-                            <li><a href="{{ url_for('software.npng_fitness') }}">NPNG Fitness Web Application</a></li>
-                            <li><a href="{{ url_for('software.hdb_analysis') }}">HDB Resale Flat Price Analysis</a></li>
-                            <li><a href="{{ url_for('software.asrea_vr') }}">ASREA - Airside Safety Risk Evaluation VR
-                                    Application</a></li>
-                            <li><a href="{{ url_for('software.myems') }}">MyEMS - Employee Management System Android
-                                    App</a></li>
-                            <li><a href="{{ url_for('software.farm_monitoring') }}">Farm Monitoring System</a></li>
-                            <li><a href="{{ url_for('software.sme_store') }}">SME Electronics Online Store</a></li>
-                            <li><a href="{{ url_for('software.temasek_pizzas') }}">Temasek Pizzas Application</a></li>
+                            <li>
+                                <a href="{{ url_for('software.clearcare') }}">
+                                    <i class="bi bi-file-earmark-medical navicon"></i>
+                                    <span>ClearCare Web Application</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.medimate') }}">
+                                    <i class="bi bi-capsule navicon"></i>
+                                    <span>MediMate Android App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.caregiver_app') }}">
+                                    <i class="bi bi-bell-fill navicon"></i>
+                                    <span>Caregiver-Elderly Medicine Reminder Android App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.kirbyeats') }}">
+                                    <i class="bi bi-fork-knife navicon"></i>
+                                    <span>KirbyEats Food Blog</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.bus_router') }}">
+                                    <i class="bi bi-bus-front-fill navicon"></i>
+                                    <span>BusRouter Route Optimizer</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.idiom_game') }}">
+                                    <i class="bi bi-controller navicon"></i>
+                                    <span>Chinese Idiom Game</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.npng_fitness') }}">
+                                    <i class="bi bi-person-standing navicon"></i>
+                                    <span>NPNG Fitness Web Application</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.hdb_analysis') }}">
+                                    <i class="bi bi-clipboard2-data navicon"></i>
+                                    <span>HDB Resale Flat Price Analysis</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.asrea_vr') }}">
+                                    <i class="bi bi-badge-vr-fill navicon"></i>
+                                    <span>ASREA - Airside Safety Risk Evaluation VR Application</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.myems') }}">
+                                    <i class="bi bi-kanban-fill navicon"></i>
+                                    <span>MyEMS - Employee Management System Android App</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.farm_monitoring') }}">
+                                    <i class="bi bi-camera-video navicon"></i>
+                                    <span>Farm Monitoring System</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.sme_store') }}">
+                                    <i class="bi bi-shop navicon"></i>
+                                    <span>SME Electronics Online Store</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('software.temasek_pizzas') }}">
+                                    <i class="bi bi-cup-straw navicon"></i>
+                                    <span>Temasek Pizzas Application</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="dropdown"><a href="{{ url_for('home.index') }}#portfolio">
-                            <span>Hardware</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <i class="bi bi-cpu navicon"></i><span>Hardware</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                         <ul>
-                            <li><a href="{{ url_for('hardware.robotic_car') }}">Automonous Robotic Car - Raspberry Pi
-                                    Pico W</a></li>
-                            <li><a href="{{ url_for('hardware.homedefender') }}">HomeDefender - Raspberry Pi Home
-                                    Security System</a></li>
-                            <li><a href="{{ url_for('hardware.translation_device') }}">TinyCircuits Language Translation
-                                    Device</a></li>
-                            <li><a href="{{ url_for('hardware.smart_aquaponics') }}">Smart Aquaponics System - Raspberry
-                                    Pi</a></li>
-                            <li><a href="{{ url_for('hardware.smart_water_heater') }}">Smart Bathroom Water Heater -
-                                    PIC18F4520</a>
+                            <li>
+                                <a href="{{ url_for('hardware.robotic_car') }}">
+                                    <i class="bi bi-robot navicon"></i>
+                                    <span>Automonous Robotic Car - Raspberry Pi Pico W</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('hardware.homedefender') }}">
+                                    <i class="bi bi-shield-lock-fill navicon"></i>
+                                    <span>HomeDefender - Raspberry Pi Home Security System</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('hardware.translation_device') }}">
+                                    <i class="bi bi-translate navicon"></i>
+                                    <span>TinyCircuits Language Translation Device</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('hardware.smart_aquaponics') }}">
+                                    <i class="bi bi-thermometer-sun navicon"></i>
+                                    <span>Smart Aquaponics System - Raspberry Pi</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('hardware.smart_water_heater') }}">
+                                    <i class="bi bi-droplet-fill navicon"></i>
+                                    <span>Smart Bathroom Water Heater - PIC18F4520</span>
+                                </a>
                             </li>
                         </ul>
                     </li>
