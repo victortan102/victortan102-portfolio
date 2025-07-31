@@ -48,6 +48,11 @@ def medimate():
     return render_template("software/medimate.html")
 
 
+@software_bp.route("/mybudgetpal")
+def mybudgetpal():
+    return render_template("software/mybudgetpal.html")
+
+
 @software_bp.route("/myems-employee-management-system")
 def myems():
     return render_template("software/myems-employee-management-system.html")
