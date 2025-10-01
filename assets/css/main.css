@@ -1537,3 +1537,20 @@ button.github-button:hover svg {
 .hide {
     display: none;
 }
+
+.project-disclaimer {
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-left: 4px solid var(--accent-color);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    border-radius: 6px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.project-disclaimer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
