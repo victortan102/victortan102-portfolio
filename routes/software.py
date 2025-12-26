@@ -33,6 +33,11 @@ def farm_monitoring():
     return render_template("software/farm-monitoring-system.html")
 
 
+@software_bp.route("/gui-based-steganography-application")
+def gui_based_steganography_application():
+    return render_template("software/gui-based-steganography-application.html")
+
+
 @software_bp.route("/hdb-resale-flat-analysis")
 def hdb_analysis():
     return render_template("software/hdb-resale-flat-analysis.html")
