@@ -68,6 +68,11 @@ def npng_fitness():
     return render_template("software/npng-fitness.html")
 
 
+@software_bp.route("/pacificmeta-game-analysis-dashboard")
+def pacificmeta_game_analysis_dashboard():
+    return render_template("software/pacific-meta-game-analysis-dashboard.html")
+
+
 @software_bp.route("/sme-electronics-store")
 def sme_store():
     return render_template("software/sme-electronics-store.html")

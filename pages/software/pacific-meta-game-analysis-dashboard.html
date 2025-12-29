@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PacificMeta Game Analysis Dashboard</title>
+
+    <!-- Include common head -->
+    {% include 'common/head.html' %}
+</head>
+
+<body class="portfolio-details-page">
+
+    <!-- Include common header -->
+    {% include 'common/header.html' %}
+
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">PacificMeta Game Analysis Dashboard</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="{{ url_for('home.index') }}">Home</a></li>
+                        <li><a href="{{ url_for('home.index') }}#portfolio">Portfolio</a></li>
+                        <li>Software</li>
+                        <li class="current">PacificMeta Game Analysis Dashboard</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <!-- Portfolio Details Section -->
+        <section id="portfolio-details" class="portfolio-details section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+
+                            {% include 'common/swiper-config.html' %}
+
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/thumbnail.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/thumbnail.png') }}"
+                                            alt="thumbnail">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/01-login.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/01-login.png') }}"
+                                            alt="01-login">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/02-home-page.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/02-home-page.png') }}"
+                                            alt="02-home-page">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/03-overall-analysis-home.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/03-overall-analysis-home.png') }}"
+                                            alt="03-overall-analysis-home">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/04-overall-avg-vs-max-score-ai.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/04-overall-avg-vs-max-score-ai.png') }}"
+                                            alt="04-overall-avg-vs-max-score-ai">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/05-overall-student-improvements-over-time-ai.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/05-overall-student-improvements-over-time-ai.png') }}"
+                                            alt="05-overall-student-improvements-over-time-ai">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/06-overall-performance-duration-error-rate-completion.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/06-overall-performance-duration-error-rate-completion.png') }}"
+                                            alt="06-overall-performance-duration-error-rate-completion">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/07-overall-top-vs-bottom-error-freq-over-time.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/07-overall-top-vs-bottom-error-freq-over-time.png') }}"
+                                            alt="07-overall-top-vs-bottom-error-freq-over-time">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/08-overall-top-vs-bottom-personalised-ai.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/08-overall-top-vs-bottom-personalised-ai.png') }}"
+                                            alt="08-overall-top-vs-bottom-personalised-ai">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/09-overall-user-analysis-ai.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/09-overall-user-analysis-ai.png') }}"
+                                            alt="09-overall-user-analysis-ai">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/10-minigame-home.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/10-minigame-home.png') }}"
+                                            alt="10-minigame-home">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/11-minigame-stats.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/11-minigame-stats.png') }}"
+                                            alt="11-minigame-stats">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/12-minigame-stats-popup.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/12-minigame-stats-popup.png') }}"
+                                            alt="12-minigame-stats-popup">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/13-minigame-ai-warning-analysis.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/13-minigame-ai-warning-analysis.png') }}"
+                                            alt="13-minigame-ai-warning-analysis">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/14-minigame-stats-ai-summary.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/14-minigame-stats-ai-summary.png') }}"
+                                            alt="14-minigame-stats-ai-summary">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/15-minigame-stats-table-ai-explain.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/15-minigame-stats-table-ai-explain.png') }}"
+                                            alt="15-minigame-stats-table-ai-explain">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/16-minigame-completion-rate-graph.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/16-minigame-completion-rate-graph.png') }}"
+                                            alt="16-minigame-completion-rate-graph">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/17-minigame-completion-rate-graph-where-prioritise-ai.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/17-minigame-completion-rate-graph-where-prioritise-ai.png') }}"
+                                            alt="17-minigame-completion-rate-graph-where-prioritise-ai">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/18-user-fields-selection.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/18-user-fields-selection.png') }}"
+                                            alt="18-user-fields-selection">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/19-user-overall-assessment.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/19-user-overall-assessment.png') }}"
+                                            alt="19-user-overall-assessment">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/20-user-overall-assessment-table.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/20-user-overall-assessment-table.png') }}"
+                                            alt="20-user-overall-assessment-table">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/21-user-single-game-analysis.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/21-user-single-game-analysis.png') }}"
+                                            alt="21-user-single-game-analysis">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/22-user-single-game-analysis-table.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/22-user-single-game-analysis-table.png') }}"
+                                            alt="22-user-single-game-analysis-table">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/23-user-single-attempt-ai-analysis.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/23-user-single-attempt-ai-analysis.png') }}"
+                                            alt="23-user-single-attempt-ai-analysis">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/24-user-overall-ai-analysis.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/24-user-overall-ai-analysis.png') }}"
+                                            alt="24-user-overall-ai-analysis">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/25-settings-change-ai-type.png') }}"
+                                        class="glightbox" data-gallery="pacificmeta-game-analysis-dashboard-gallery">
+                                        <img src="{{ url_for('static', filename='img/portfolio/software/pacificmeta-game-analysis-dashboard-ICT2114-ICT3217/25-settings-change-ai-type.png') }}"
+                                            alt="25-settings-change-ai-type">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Project Information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Software, AI Game Analytics</li>
+                                <li><strong>Language</strong>: Python</li>
+                                <li><strong>Project Date</strong>: May 2025 - Dec 2025</li>
+                                <li>
+                                    <a href="https://youtu.be/sjAvn1fgR-U" target="_blank">
+                                        <button class="youtube-button">
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg height="24" width="24" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path
+                                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                                            fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>Watch on YouTube</span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="hide">
+                                    <a href="https://github.com/victortan102/ICT2114-ICT3217-Integrative-Team-Project"
+                                        target="_blank">
+                                        <button class="github-button">
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg height="24" width="24" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.491.5.091.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.153-1.11-1.46-1.11-1.46-.907-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.891 1.527 2.341 1.086 2.91.831.091-.646.349-1.086.636-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.983 1.03-2.681-.103-.253-.446-1.27.098-2.648 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.705.115 2.504.337 1.909-1.294 2.749-1.025 2.749-1.025.545 1.378.202 2.395.099 2.648.64.698 1.03 1.59 1.03 2.681 0 3.841-2.338 4.687-4.566 4.933.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .267.18.576.688.478A10.003 10.003 0 0 0 22 12c0-5.523-4.477-10-10-10z"
+                                                            fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>View on GitHub</span>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                            <h2>Project Overview</h2>
+                            <p>
+                                The <strong>PacificMeta Game Analysis Dashboard</strong> focuses on the design
+                                and implementation
+                                of an AI-powered analytics system for healthcare training games. Developed in
+                                collaboration
+                                with Saint Francis University and Pacific Meta, the project aims to enhance the
+                                educational value of serious games by transforming raw gameplay telemetry such as user
+                                decisions,
+                                errors, and timing into actionable insights.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+
+        <!-- Additional Details Section -->
+        <section id="additional-details" class="portfolio-details section">
+            <div class="container portfolio-description" data-aos="fade-up" data-aos-delay="100">
+                <h2>🎯 Key Features of Application</h2>
+                <ol>
+                    <li>🔐 <strong>Role-Based Authentication:</strong> Secure session-based login with MD5 password
+                        hashing and granular data access levels for Admins and Teachers.</li>
+                    <li>📊 <strong>Multi-Dimensional Analytics:</strong> Interactive visualizations including score
+                        trends, error frequency heatmaps, and performance vs. duration scatter plots.</li>
+                    <li>🧠 <strong>Hybrid AI Integration:</strong> Flexible architecture allowing seamless switching
+                        between DeepSeek Cloud APIs and local LLMs via Ollama for offline use.</li>
+                    <li>🧹 <strong>Intelligent Caching System:</strong> Optimized performance using Flask-Caching to
+                        store AI responses, reducing API costs and latency for repeated queries.</li>
+                    <li>🎮 <strong>Minigame Deep-Dives:</strong> Comprehensive analysis per module with completion
+                        rates, average scores, and AI-generated executive summaries.</li>
+                    <li>👤 <strong>Personalized Student Insights:</strong> Detailed user profiling that tracks learning
+                        curves across attempts and identifies specific strengths and weaknesses.</li>
+                    <li>🛠️ <strong>Scalable Infrastructure:</strong> Containerized deployment using Docker with Nginx
+                        reverse proxying and round-robin load balancing.</li>
+                    <li>📋 <strong>AI Error Categorization:</strong> Automated grouping of raw telemetry into
+                        imprecision, warning, minor, and severe error buckets with actionable improvement strategies.
+                    </li>
+                    <li>📂 <strong>Exportable AI Reports:</strong> Ability to download AI-generated feedback and
+                        performance summaries as text files for offline record-keeping.</li>
+                    <li>⚙️ <strong>Dynamic Management Panel:</strong> Centralized settings to toggle AI models, clear
+                        system cache, and adjust performance thresholds on the fly.</li>
+                </ol>
+            </div>
+        </section><!-- /Additional Details Section -->
+    </main>
+
+    <!-- Footer -->
+    {% include 'common/footer.html' %}
+</body>
+
+</html>
