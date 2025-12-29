@@ -1,0 +1,13 @@
+venv/
+.env
+__pycache__/
+*.pyc
+.git/
+.gitignore
+node_modules/
+.cache/
+models/
+data/
+*.bin
+*.pt
+*.safetensors
