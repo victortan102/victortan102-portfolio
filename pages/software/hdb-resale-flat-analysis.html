@@ -13,6 +13,10 @@
     <!-- Include common header -->
     {% include 'common/header.html' %}
 
+    {% set IMG_BASE =
+    "https://raw.githubusercontent.com/victortan102/victortan102-portfolio/main/assets/img/portfolio/software/hdb-flat-price-analysis-INF1002"
+    %}
+
     <main class="main">
         <!-- Page Title -->
         <div class="page-title dark-background">
@@ -39,220 +43,46 @@
                             {% include 'common/swiper-config.html' %}
 
                             <div class="swiper-wrapper align-items-center">
+
+                                {% for img_closeup, img, alt in [
+                                ('thumbnail.png', 'thumbnail.png', 'thumbnail'),
+                                ('hdb-flat-app-home.png', 'hdb-flat-app-home.png', 'hdb-flat-app-home'),
+                                ('hdb-flat-app-demo-1.png', 'hdb-flat-app-demo-1.png', 'hdb-flat-app-demo-1'),
+                                ('hdb-flat-app-demo-2.png', 'hdb-flat-app-demo-2.png', 'hdb-flat-app-demo-2'),
+                                ('hdb-flat-app-demo-3.png', 'hdb-flat-app-demo-3.png', 'hdb-flat-app-demo-3'),
+                                ('hdb-flat-app-demo-4.png', 'hdb-flat-app-demo-4.png', 'hdb-flat-app-demo-4'),
+                                ('hdb-flat-app-demo-5.png', 'hdb-flat-app-demo-5.png', 'hdb-flat-app-demo-5'),
+                                ('hdb-flat-app-demo-6.png', 'hdb-flat-app-demo-6.png', 'hdb-flat-app-demo-6'),
+                                ('hdb-flat-app-demo-7.png', 'hdb-flat-app-demo-7.png', 'hdb-flat-app-demo-7'),
+                                ('hdb-flat-app-demo-8.png', 'hdb-flat-app-demo-8.png', 'hdb-flat-app-demo-8'),
+                                ('hdb-flat-app-demo-9.png', 'hdb-flat-app-demo-9.png', 'hdb-flat-app-demo-9'),
+                                ('hdb-flat-app-demo-10.png', 'hdb-flat-app-demo-10.png', 'hdb-flat-app-demo-10'),
+                                ('hdb-flat-app-demo-11.png', 'hdb-flat-app-demo-11.png', 'hdb-flat-app-demo-11'),
+                                ('hdb-flat-app-demo-12.png', 'hdb-flat-app-demo-12.png', 'hdb-flat-app-demo-12'),
+                                ('hdb-flat-app-demo-13.png', 'hdb-flat-app-demo-13.png', 'hdb-flat-app-demo-13'),
+                                ('hdb-flat-app-demo-14.png', 'hdb-flat-app-demo-14.png', 'hdb-flat-app-demo-14'),
+                                ('hdb-flat-app-demo-15.png', 'hdb-flat-app-demo-15.png', 'hdb-flat-app-demo-15'),
+                                ('hdb-flat-app-demo-16.png', 'hdb-flat-app-demo-16.png', 'hdb-flat-app-demo-16'),
+                                ('hdb-flat-app-demo-17.png', 'hdb-flat-app-demo-17.png', 'hdb-flat-app-demo-17'),
+                                ('hdb-flat-app-demo-18.png', 'hdb-flat-app-demo-18.png', 'hdb-flat-app-demo-18'),
+                                ('hdb-flat-app-demo-19.png', 'hdb-flat-app-demo-19.png', 'hdb-flat-app-demo-19'),
+                                ('hdb-flat-app-demo-20.png', 'hdb-flat-app-demo-20.png', 'hdb-flat-app-demo-20'),
+                                ('hdb-flat-app-demo-21.png', 'hdb-flat-app-demo-21.png', 'hdb-flat-app-demo-21'),
+                                ('hdb-flat-app-demo-22.png', 'hdb-flat-app-demo-22.png', 'hdb-flat-app-demo-22'),
+                                ('hdb-flat-app-demo-23.png', 'hdb-flat-app-demo-23.png', 'hdb-flat-app-demo-23'),
+                                ('hdb-flat-app-demo-24.png', 'hdb-flat-app-demo-24.png', 'hdb-flat-app-demo-24'),
+                                ('hdb-flat-app-demo-25.png', 'hdb-flat-app-demo-25.png', 'hdb-flat-app-demo-25'),
+                                ] %}
+
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/thumbnail.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/thumbnail.png') }}"
-                                            alt="thumbnail">
+                                    <a href="{{ IMG_BASE }}/{{ img_closeup }}" class="glightbox"
+                                        data-gallery="python-hdb-analysis-gallery">
+                                        <img src="{{ IMG_BASE }}/{{ img }}" alt="{{ alt }}" loading="lazy"
+                                            decoding="async">
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-home.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-home.png') }}"
-                                            alt="hdb-flat-app-home">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-1.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-1.png') }}"
-                                            alt="hdb-flat-app-demo-1">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-2.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-2.png') }}"
-                                            alt="hdb-flat-app-demo-2">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-3.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-3.png') }}"
-                                            alt="hdb-flat-app-demo-3">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-4.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-4.png') }}"
-                                            alt="hdb-flat-app-demo-4">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-5.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-5.png') }}"
-                                            alt="hdb-flat-app-demo-5">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-6.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-6.png') }}"
-                                            alt="hdb-flat-app-demo-6">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-7.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-7.png') }}"
-                                            alt="hdb-flat-app-demo-7">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-8.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-8.png') }}"
-                                            alt="hdb-flat-app-demo-8">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-9.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-9.png') }}"
-                                            alt="hdb-flat-app-demo-9">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-10.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-10.png') }}"
-                                            alt="hdb-flat-app-demo-10">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-11.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-11.png') }}"
-                                            alt="hdb-flat-app-demo-11">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-12.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-12.png') }}"
-                                            alt="hdb-flat-app-demo-12">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-13.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-13.png') }}"
-                                            alt="hdb-flat-app-demo-13">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-14.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-14.png') }}"
-                                            alt="hdb-flat-app-demo-14">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-15.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-15.png') }}"
-                                            alt="hdb-flat-app-demo-15">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-16.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-16.png') }}"
-                                            alt="hdb-flat-app-demo-16">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-17.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-17.png') }}"
-                                            alt="hdb-flat-app-demo-17">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-18.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-18.png') }}"
-                                            alt="hdb-flat-app-demo-18">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-19.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-19.png') }}"
-                                            alt="hdb-flat-app-demo-19">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-20.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-20.png') }}"
-                                            alt="hdb-flat-app-demo-20">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-21.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-21.png') }}"
-                                            alt="hdb-flat-app-demo-21">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-22.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-22.png') }}"
-                                            alt="hdb-flat-app-demo-22">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-23.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-23.png') }}"
-                                            alt="hdb-flat-app-demo-23">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-24.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-24.png') }}"
-                                            alt="hdb-flat-app-demo-24">
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-25.png') }}"
-                                        class="glightbox" data-gallery="python-hdb-analysis-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/hdb-flat-price-analysis-INF1002/hdb-flat-app-demo-25.png') }}"
-                                            alt="hdb-flat-app-demo-25">
-                                    </a>
-                                </div>
+                                {% endfor %}
 
                             </div>
                             <div class="swiper-pagination"></div>

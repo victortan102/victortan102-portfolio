@@ -13,6 +13,10 @@
     <!-- Include common header -->
     {% include 'common/header.html' %}
 
+    {% set IMG_BASE =
+    "https://raw.githubusercontent.com/victortan102/victortan102-portfolio/main/assets/img/portfolio/software/bus-router-INF1008"
+    %}
+
     <main class="main">
         <!-- Page Title -->
         <div class="page-title dark-background">
@@ -39,125 +43,39 @@
                             {% include 'common/swiper-config.html' %}
 
                             <div class="swiper-wrapper align-items-center">
+                                {% for img_closeup, img, alt in [
+                                ('thumbnail.png', 'bus-router-pc.png', 'BusRouter Application Thumbnail'),
+                                ('02-bus-router-system-diagram.png', '02-bus-router-system-diagram.png', 'System
+                                Diagram'),
+                                ('03-bus-router-firebase-schema.png', '03-bus-router-firebase-schema.png', 'Firebase
+                                Schema'),
+                                ('05-bus-router-pick-up-points.png', '05-bus-router-pick-up-points.png', 'Pick Up
+                                Points'),
+                                ('06-bus-router-drop-off-points.png', '06-bus-router-drop-off-points.png', 'Drop Off
+                                Points'),
+                                ('07-bus-router-star-rating.png', '07-bus-router-star-rating.png', 'Star Rating
+                                Filter'),
+                                ('08-bus-router-generated-routes.png', '08-bus-router-generated-routes.png', 'Generated
+                                Routes'),
+                                ('09-bus-router-driving-directions.png', '09-bus-router-driving-directions.png',
+                                'Driving Directions'),
+                                ('10-bus-router-map-1.png', '10-bus-router-map-1.png', 'Map View 1'),
+                                ('11-bus-router-map-2.png', '11-bus-router-map-2.png', 'Map View 2'),
+                                ('12-bus-router-map-3.png', '12-bus-router-map-3.png', 'Map View 3'),
+                                ('13-bus-router-map-4.png', '13-bus-router-map-4.png', 'Map View 4'),
+                                ('14-bus-router-dark-mode.png', '14-bus-router-dark-mode.png', 'Dark Mode'),
+                                ('15-bus-router-settings.png', '15-bus-router-settings.png', 'Settings Page')
+                                ] %}
+
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/thumbnail.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/thumbnail.png') }}"
-                                            alt="thumbnail">
+                                    <a href="{{ IMG_BASE }}/{{ img_closeup }}" class="glightbox"
+                                        data-gallery="bus-router-gallery">
+                                        <img src="{{ IMG_BASE }}/{{ img }}" alt="{{ alt }}" loading="lazy"
+                                            decoding="async">
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/04-bus-router-home.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/bus-router-pc.png') }}"
-                                            alt="bus-router-home">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/02-bus-router-system-diagram.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/02-bus-router-system-diagram.png') }}"
-                                            alt="bus-router-system-diagram">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/03-bus-router-firebase-schema.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/03-bus-router-firebase-schema.png') }}"
-                                            alt="bus-router-firebase-schema">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/05-bus-router-pick-up-points.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/05-bus-router-pick-up-points.png') }}"
-                                            alt="bus-router-pick-up-points">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/06-bus-router-drop-off-points.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/06-bus-router-drop-off-points.png') }}"
-                                            alt="bus-router-drop-off-points">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/07-bus-router-star-rating.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/07-bus-router-star-rating.png') }}"
-                                            alt="bus-router-star-rating">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/08-bus-router-generated-routes.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/08-bus-router-generated-routes.png') }}"
-                                            alt="bus-router-generated-routes">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/09-bus-router-driving-directions.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/09-bus-router-driving-directions.png') }}"
-                                            alt="bus-router-driving-directions">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/10-bus-router-map-1.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/10-bus-router-map-1.png') }}"
-                                            alt="bus-router-map-1">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/11-bus-router-map-2.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/11-bus-router-map-2.png') }}"
-                                            alt="bus-router-map-2">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/12-bus-router-map-3.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/12-bus-router-map-3.png') }}"
-                                            alt="bus-router-map-3">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/13-bus-router-map-4.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/13-bus-router-map-4.png') }}"
-                                            alt="bus-router-map-4">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/14-bus-router-dark-mode.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/14-bus-router-dark-mode.png') }}"
-                                            alt="bus-router-dark-mode">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/15-bus-router-settings.png') }}"
-                                        class="glightbox" data-gallery="bus-router-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/bus-router-INF1008/15-bus-router-settings.png') }}"
-                                            alt="bus-router-settings">
-                                    </a>
-                                </div>
+                                {% endfor %}
 
                             </div>
                             <div class="swiper-pagination"></div>

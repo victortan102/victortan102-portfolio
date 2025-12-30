@@ -13,6 +13,10 @@
     <!-- Include common header -->
     {% include 'common/header.html' %}
 
+    {% set IMG_BASE =
+    "https://raw.githubusercontent.com/victortan102/victortan102-portfolio/main/assets/img/portfolio/software/clearcare-web-application"
+    %}
+
     <main class="main">
         <!-- Page Title -->
         <div class="page-title dark-background">
@@ -39,477 +43,151 @@
                             {% include 'common/swiper-config.html' %}
 
                             <div class="swiper-wrapper align-items-center">
+
+                                {% for img_closeup, img, alt in [
+                                ('thumbnail.png', 'thumbnail.png', 'thumbnail'),
+                                ('01-clearcare-login.png', '01-clearcare-login.png', '01-clearcare-login'),
+                                ('02-clearcare-request-otp.png', '02-clearcare-request-otp.png',
+                                '02-clearcare-request-otp'),
+                                ('03-clearcare-otp-email.png', '03-clearcare-otp-email.png', '03-clearcare-otp-email'),
+                                ('04-clearcare-otp-verification.png', '04-clearcare-otp-verification.png',
+                                '04-clearcare-otp-verification'),
+                                ('05-clearcare-registration-step-1.png', '05-clearcare-registration-step-1.png',
+                                '05-clearcare-registration-step-1'),
+                                ('06-clearcare-registration-step-2.png', '06-clearcare-registration-step-2.png',
+                                '06-clearcare-registration-step-2'),
+                                ('07-clearcare-doctor-home-light-mode.png', '07-clearcare-doctor-home-light-mode.png',
+                                '07-clearcare-doctor-home-light-mode'),
+                                ('08-clearcare-doctor-home-dark-mode.png', '08-clearcare-doctor-home-dark-mode.png',
+                                '08-clearcare-doctor-home-dark-mode'),
+                                ('09-clearcare-doctor-view-profile.png', '09-clearcare-doctor-view-profile.png',
+                                '09-clearcare-doctor-view-profile'),
+                                ('10-clearcare-doctor-view-med-record.png', '10-clearcare-doctor-view-med-record.png',
+                                '10-clearcare-doctor-view-med-record'),
+                                ('11-clearcare-doctor-service-type.png', '11-clearcare-doctor-service-type.png',
+                                '11-clearcare-doctor-service-type'),
+                                ('12-clearcare-doctor-service-history.png', '12-clearcare-doctor-service-history.png',
+                                '12-clearcare-doctor-service-history'),
+                                ('13-clearcare-doctor-service-appointments.png',
+                                '13-clearcare-doctor-service-appointments.png',
+                                '13-clearcare-doctor-service-appointments'),
+                                ('14-clearcare-doctor-auto-scheduler.png', '14-clearcare-doctor-auto-scheduler.png',
+                                '14-clearcare-doctor-auto-scheduler'),
+                                ('15-clearcare-doctor-add-appointment.png', '15-clearcare-doctor-add-appointment.png',
+                                '15-clearcare-doctor-add-appointment'),
+                                ('16-clearcare-doctor-service-appointments-status.png',
+                                '16-clearcare-doctor-service-appointments-status.png',
+                                '16-clearcare-doctor-service-appointments-status'),
+                                ('17-clearcare-doctor-service-appointments-analytics.png',
+                                '17-clearcare-doctor-service-appointments-analytics.png',
+                                '17-clearcare-doctor-service-appointments-analytics'),
+                                ('18-clearcare-doctor-home-assessment-list.png',
+                                '18-clearcare-doctor-home-assessment-list.png',
+                                '18-clearcare-doctor-home-assessment-list'),
+                                ('19-clearcare-doctor-view-home-assessment.png',
+                                '19-clearcare-doctor-view-home-assessment.png',
+                                '19-clearcare-doctor-view-home-assessment'),
+                                ('20-clearcare-doctor-enquiry-list.png', '20-clearcare-doctor-enquiry-list.png',
+                                '20-clearcare-doctor-enquiry-list'),
+                                ('21-clearcare-doctor-reply-enquiry.png', '21-clearcare-doctor-reply-enquiry.png',
+                                '21-clearcare-doctor-reply-enquiry'),
+                                ('22-clearcare-doctor-side-effects-list.png',
+                                '22-clearcare-doctor-side-effects-list.png', '22-clearcare-doctor-side-effects-list'),
+                                ('23-clearcare-doctor-side-effect-analytics.png',
+                                '23-clearcare-doctor-side-effect-analytics.png',
+                                '23-clearcare-doctor-side-effect-analytics'),
+                                ('24-clearcare-doctor-prescriptions-list.png',
+                                '24-clearcare-doctor-prescriptions-list.png', '24-clearcare-doctor-prescriptions-list'),
+                                ('25-clearcare-doctor-drug-interaction-found.png',
+                                '25-clearcare-doctor-drug-interaction-found.png',
+                                '25-clearcare-doctor-drug-interaction-found'),
+                                ('26-clearcare-doctor-drug-interaction-invalid.png',
+                                '26-clearcare-doctor-drug-interaction-invalid.png',
+                                '26-clearcare-doctor-drug-interaction-invalid'),
+                                ('27-clearcare-doctor-consultation-list.png',
+                                '27-clearcare-doctor-consultation-list.png', '27-clearcare-doctor-consultation-list'),
+                                ('28-clearcare-doctor-consultation-details.png',
+                                '28-clearcare-doctor-consultation-details.png',
+                                '28-clearcare-doctor-consultation-details'),
+                                ('29-clearcare-doctor-patient-discharge-summaries-list.png',
+                                '29-clearcare-doctor-patient-discharge-summaries-list.png',
+                                '29-clearcare-doctor-patient-discharge-summaries-list'),
+                                ('30-clearcare-doctor-patient-discharge-summaries-details.png',
+                                '30-clearcare-doctor-patient-discharge-summaries-details.png',
+                                '30-clearcare-doctor-patient-discharge-summaries-details'),
+                                ('31-clearcare-doctor-resources-list.png', '31-clearcare-doctor-resources-list.png',
+                                '31-clearcare-doctor-resources-list'),
+                                ('32-clearcare-doctor-update-resource.png', '32-clearcare-doctor-update-resource.png',
+                                '32-clearcare-doctor-update-resource'),
+                                ('33-clearcare-doctor-view-med-record-details.png',
+                                '33-clearcare-doctor-view-med-record-details.png',
+                                '33-clearcare-doctor-view-med-record-details'),
+                                ('34-clearcare-nurse-view-profile.png', '34-clearcare-nurse-view-profile.png',
+                                '34-clearcare-nurse-view-profile'),
+                                ('35-clearcare-nurse-availability.png', '35-clearcare-nurse-availability.png',
+                                '35-clearcare-nurse-availability'),
+                                ('36-clearcare-nurse-service-completion.png',
+                                '36-clearcare-nurse-service-completion.png', '36-clearcare-nurse-service-completion'),
+                                ('37-clearcare-patient-view-profile.png', '37-clearcare-patient-view-profile.png',
+                                '37-clearcare-patient-view-profile'),
+                                ('38-clearcare-patient-submit-home-assessment.png',
+                                '38-clearcare-patient-submit-home-assessment.png',
+                                '38-clearcare-patient-submit-home-assessment'),
+                                ('39-clearcare-patient-new-enquiry.png', '39-clearcare-patient-new-enquiry.png',
+                                '39-clearcare-patient-new-enquiry'),
+                                ('40-clearcare-patient-drug-log-list.png', '40-clearcare-patient-drug-log-list.png',
+                                '40-clearcare-patient-drug-log-list'),
+                                ('41-clearcare-patient-upload-drug-log.png', '41-clearcare-patient-upload-drug-log.png',
+                                '41-clearcare-patient-upload-drug-log'),
+                                ('42-clearcare-patient-community-list.png', '42-clearcare-patient-community-list.png',
+                                '42-clearcare-patient-community-list'),
+                                ('43-clearcare-patient-join-community.png', '43-clearcare-patient-join-community.png',
+                                '43-clearcare-patient-join-community'),
+                                ('44-clearcare-patient-community-post.png', '44-clearcare-patient-community-post.png',
+                                '44-clearcare-patient-community-post'),
+                                ('45-clearcare-patient-feedback-list.png', '45-clearcare-patient-feedback-list.png',
+                                '45-clearcare-patient-feedback-list'),
+                                ('46-clearcare-patient-own-medical-records-list.png',
+                                '46-clearcare-patient-own-medical-records-list.png',
+                                '46-clearcare-patient-own-medical-records-list'),
+                                ('47-clearcare-patient-view-medical-record.png',
+                                'clearcare-patient-view-medical-record.png', 'clearcare-patient-view-medical-record'),
+                                ('48-clearcare-patient-assign-caregiver.png',
+                                '48-clearcare-patient-assign-caregiver.png', '48-clearcare-patient-assign-caregiver'),
+                                ('49-clearcare-patient-remove-caregiver.png',
+                                '49-clearcare-patient-remove-caregiver.png',
+                                '49-clearcare-patient-remove-caregiver'),
+                                ('50-clearcare-caregiver-view-profile.png', '50-clearcare-caregiver-view-profile.png',
+                                '50-clearcare-caregiver-view-profile'),
+                                ('51-clearcare-caregiver-assigned-patient-records.png',
+                                '51-clearcare-caregiver-assigned-patient-records.png',
+                                '51-clearcare-caregiver-assigned-patient-records'),
+                                ('52-clearcare-admin-view-profile.png', '52-clearcare-admin-view-profile.png',
+                                '52-clearcare-admin-view-profile'),
+                                ('53-clearcare-admin-manage-users.png', '53-clearcare-admin-manage-users.png',
+                                '53-clearcare-admin-manage-users'),
+                                ('54-clearcare-admin-view-user.png', '54-clearcare-admin-view-user.png',
+                                '54-clearcare-admin-view-user'),
+                                ('55-clearcare-admin-reset-password-email.png',
+                                '55-clearcare-admin-reset-password-email.png',
+                                '55-clearcare-admin-reset-password-email'),
+                                ('56-clearcare-admin-audit-logs.png', '56-clearcare-admin-audit-logs.png',
+                                '56-clearcare-admin-audit-logs'),
+                                ('57-clearcare-admin-view-audit-log.png', '57-clearcare-admin-view-audit-log.png',
+                                '57-clearcare-admin-view-audit-log'),
+                                ('58-clearcare-settings.png', '58-clearcare-settings.png', '58-clearcare-settings'),
+                                ] %}
+
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/thumbnail.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/thumbnail.png') }}"
-                                            alt="thumbnail">
+                                    <a href="{{ IMG_BASE }}/{{ img_closeup }}" class="glightbox"
+                                        data-gallery="clearcare-gallery">
+                                        <img src="{{ IMG_BASE }}/{{ img }}" alt="{{ alt }}" loading="lazy"
+                                            decoding="async">
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/01-clearcare-login.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/01-clearcare-login.png') }}"
-                                            alt="01-clearcare-login">
-                                    </a>
-                                </div>
+                                {% endfor %}
 
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/02-clearcare-request-otp.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/02-clearcare-request-otp.png') }}"
-                                            alt="02-clearcare-request-otp">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/03-clearcare-otp-email.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/03-clearcare-otp-email.png') }}"
-                                            alt="03-clearcare-otp-email">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/04-clearcare-otp-verification.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/04-clearcare-otp-verification.png') }}"
-                                            alt="04-clearcare-otp-verification">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/05-clearcare-registration-step-1.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/05-clearcare-registration-step-1.png') }}"
-                                            alt="05-clearcare-registration-step-1">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/06-clearcare-registration-step-2.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/06-clearcare-registration-step-2.png') }}"
-                                            alt="06-clearcare-registration-step-2">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/07-clearcare-doctor-home-light-mode.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/07-clearcare-doctor-home-light-mode.png') }}"
-                                            alt="07-clearcare-doctor-home-light-mode">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/08-clearcare-doctor-home-dark-mode.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/08-clearcare-doctor-home-dark-mode.png') }}"
-                                            alt="08-clearcare-doctor-home-dark-mode">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/09-clearcare-doctor-view-profile.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/09-clearcare-doctor-view-profile.png') }}"
-                                            alt="09-clearcare-doctor-view-profile">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/10-clearcare-doctor-view-med-record.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/10-clearcare-doctor-view-med-record.png') }}"
-                                            alt="10-clearcare-doctor-view-med-record">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/11-clearcare-doctor-service-type.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/11-clearcare-doctor-service-type.png') }}"
-                                            alt="11-clearcare-doctor-service-type">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/12-clearcare-doctor-service-history.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/12-clearcare-doctor-service-history.png') }}"
-                                            alt="12-clearcare-doctor-service-history">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/13-clearcare-doctor-service-appointments.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/13-clearcare-doctor-service-appointments.png') }}"
-                                            alt="13-clearcare-doctor-service-appointments">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/14-clearcare-doctor-auto-scheduler.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/14-clearcare-doctor-auto-scheduler.png') }}"
-                                            alt="14-clearcare-doctor-auto-scheduler">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/15-clearcare-doctor-add-appointment.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/15-clearcare-doctor-add-appointment.png') }}"
-                                            alt="15-clearcare-doctor-add-appointment">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/16-clearcare-doctor-service-appointments-status.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/16-clearcare-doctor-service-appointments-status.png') }}"
-                                            alt="16-clearcare-doctor-service-appointments-status">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/17-clearcare-doctor-service-appointments-analytics.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/17-clearcare-doctor-service-appointments-analytics.png') }}"
-                                            alt="17-clearcare-doctor-service-appointments-analytics">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/18-clearcare-doctor-home-assessment-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/18-clearcare-doctor-home-assessment-list.png') }}"
-                                            alt="18-clearcare-doctor-home-assessment-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/19-clearcare-doctor-view-home-assessment.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/19-clearcare-doctor-view-home-assessment.png') }}"
-                                            alt="19-clearcare-doctor-view-home-assessment">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/20-clearcare-doctor-enquiry-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/20-clearcare-doctor-enquiry-list.png') }}"
-                                            alt="20-clearcare-doctor-enquiry-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/21-clearcare-doctor-reply-enquiry.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/21-clearcare-doctor-reply-enquiry.png') }}"
-                                            alt="21-clearcare-doctor-reply-enquiry">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/22-clearcare-doctor-side-effects-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/22-clearcare-doctor-side-effects-list.png') }}"
-                                            alt="22-clearcare-doctor-side-effects-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/23-clearcare-doctor-side-effect-analytics.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/23-clearcare-doctor-side-effect-analytics.png') }}"
-                                            alt="23-clearcare-doctor-side-effect-analytics">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/24-clearcare-doctor-prescriptions-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/24-clearcare-doctor-prescriptions-list.png') }}"
-                                            alt="24-clearcare-doctor-prescriptions-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/25-clearcare-doctor-drug-interaction-found.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/25-clearcare-doctor-drug-interaction-found.png') }}"
-                                            alt="25-clearcare-doctor-drug-interaction-found">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/26-clearcare-doctor-drug-interaction-invalid.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/26-clearcare-doctor-drug-interaction-invalid.png') }}"
-                                            alt="26-clearcare-doctor-drug-interaction-invalid">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/27-clearcare-doctor-consultation-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/27-clearcare-doctor-consultation-list.png') }}"
-                                            alt="27-clearcare-doctor-consultation-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/28-clearcare-doctor-consultation-details.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/28-clearcare-doctor-consultation-details.png') }}"
-                                            alt="28-clearcare-doctor-consultation-details">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/29-clearcare-doctor-patient-discharge-summaries-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/29-clearcare-doctor-patient-discharge-summaries-list.png') }}"
-                                            alt="29-clearcare-doctor-patient-discharge-summaries-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/30-clearcare-doctor-patient-discharge-summaries-details.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/30-clearcare-doctor-patient-discharge-summaries-details.png') }}"
-                                            alt="30-clearcare-doctor-patient-discharge-summaries-details">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/31-clearcare-doctor-resources-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/31-clearcare-doctor-resources-list.png') }}"
-                                            alt="31-clearcare-doctor-resources-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/32-clearcare-doctor-update-resource.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/32-clearcare-doctor-update-resource.png') }}"
-                                            alt="32-clearcare-doctor-update-resource">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/33-clearcare-doctor-view-med-record-details.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/33-clearcare-doctor-view-med-record-details.png') }}"
-                                            alt="33-clearcare-doctor-view-med-record-details">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/34-clearcare-nurse-view-profile.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/34-clearcare-nurse-view-profile.png') }}"
-                                            alt="34-clearcare-nurse-view-profile">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/35-clearcare-nurse-availability.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/35-clearcare-nurse-availability.png') }}"
-                                            alt="35-clearcare-nurse-availability">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/36-clearcare-nurse-service-completion.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/36-clearcare-nurse-service-completion.png') }}"
-                                            alt="36-clearcare-nurse-service-completion">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/37-clearcare-patient-view-profile.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/37-clearcare-patient-view-profile.png') }}"
-                                            alt="37-clearcare-patient-view-profile">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/38-clearcare-patient-submit-home-assessment.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/38-clearcare-patient-submit-home-assessment.png') }}"
-                                            alt="38-clearcare-patient-submit-home-assessment">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/39-clearcare-patient-new-enquiry.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/39-clearcare-patient-new-enquiry.png') }}"
-                                            alt="39-clearcare-patient-new-enquiry">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/40-clearcare-patient-drug-log-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/40-clearcare-patient-drug-log-list.png') }}"
-                                            alt="40-clearcare-patient-drug-log-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/41-clearcare-patient-upload-drug-log.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/41-clearcare-patient-upload-drug-log.png') }}"
-                                            alt="41-clearcare-patient-upload-drug-log">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/42-clearcare-patient-community-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/42-clearcare-patient-community-list.png') }}"
-                                            alt="42-clearcare-patient-community-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/43-clearcare-patient-join-community.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/43-clearcare-patient-join-community.png') }}"
-                                            alt="43-clearcare-patient-join-community">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/44-clearcare-patient-community-post.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/44-clearcare-patient-community-post.png') }}"
-                                            alt="44-clearcare-patient-community-post">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/45-clearcare-patient-feedback-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/45-clearcare-patient-feedback-list.png') }}"
-                                            alt="45-clearcare-patient-feedback-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/46-clearcare-patient-own-medical-records-list.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/46-clearcare-patient-own-medical-records-list.png') }}"
-                                            alt="46-clearcare-patient-own-medical-records-list">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/47-clearcare-patient-view-medical-record.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/47-clearcare-patient-view-medical-record.png') }}"
-                                            alt="47-clearcare-patient-view-medical-record">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/48-clearcare-patient-assign-caregiver.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/48-clearcare-patient-assign-caregiver.png') }}"
-                                            alt="48-clearcare-patient-assign-caregiver">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/49-clearcare-patient-remove-caregiver.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/49-clearcare-patient-remove-caregiver.png') }}"
-                                            alt="49-clearcare-patient-remove-caregiver">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/50-clearcare-caregiver-view-profile.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/50-clearcare-caregiver-view-profile.png') }}"
-                                            alt="50-clearcare-caregiver-view-profile">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/51-clearcare-caregiver-assigned-patient-records.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/51-clearcare-caregiver-assigned-patient-records.png') }}"
-                                            alt="51-clearcare-caregiver-assigned-patient-records">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/52-clearcare-admin-view-profile.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/52-clearcare-admin-view-profile.png') }}"
-                                            alt="52-clearcare-admin-view-profile">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/53-clearcare-admin-manage-users.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/53-clearcare-admin-manage-users.png') }}"
-                                            alt="53-clearcare-admin-manage-users">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/54-clearcare-admin-view-user.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/54-clearcare-admin-view-user.png') }}"
-                                            alt="54-clearcare-admin-view-user">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/55-clearcare-admin-reset-password-email.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/55-clearcare-admin-reset-password-email.png') }}"
-                                            alt="55-clearcare-admin-reset-password-email">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/56-clearcare-admin-audit-logs.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/56-clearcare-admin-audit-logs.png') }}"
-                                            alt="56-clearcare-admin-audit-logs">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/57-clearcare-admin-view-audit-log.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/57-clearcare-admin-view-audit-log.png') }}"
-                                            alt="57-clearcare-admin-view-audit-log">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/58-clearcare-settings.png') }}"
-                                        class="glightbox" data-gallery="clearcare-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/software/clearcare-web-application/58-clearcare-settings.png') }}"
-                                            alt="58-clearcare-settings">
-                                    </a>
-                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>

@@ -13,6 +13,10 @@
     <!-- Include common header -->
     {% include 'common/header.html' %}
 
+    {% set IMG_BASE =
+    "https://raw.githubusercontent.com/victortan102/victortan102-portfolio/main/assets/img/portfolio/hardware/smart-aquaponics-system-IOTP"
+    %}
+
     <main class="main">
         <!-- Page Title -->
         <div class="page-title dark-background">
@@ -39,69 +43,42 @@
                             {% include 'common/swiper-config.html' %}
 
                             <div class="swiper-wrapper align-items-center">
+
+                                {% for img_closeup, img, alt in [
+                                ('thumbnail.jpg',
+                                'thumbnail.jpg', 'thumbnail'),
+                                ('smart-aquaponics-architechural-diagram.jpg',
+                                'smart-aquaponics-architechural-diagram.jpg',
+                                'architechural-diagram'),
+                                ('3-smart-aquaponics-schematic.jpg',
+                                '3-smart-aquaponics-schematic.jpg', 'schematic'),
+                                ('4-smart-aquaponics-circuit-picture.jpg',
+                                '4-smart-aquaponics-circuit-picture.jpg',
+                                'circuit-picture'),
+                                ('5-smart-aquaponics-mqtt-app-dashboard.jpg',
+                                '5-smart-aquaponics-mqtt-app-dashboard.jpg',
+                                'mqtt-app-dashboard'),
+                                ('6-smart-aquaponics-mqtt-app-messages.jpg',
+                                '6-smart-aquaponics-mqtt-app-messages.jpg',
+                                'mqtt-app-messages'),
+                                ('7-smart-aquaponics-mqtt-app-threshold-control-1.jpg',
+                                '7-smart-aquaponics-mqtt-app-threshold-control-1.jpg',
+                                'mqtt-app-threshold-control-1'),
+                                ('8-smart-aquaponics-mqtt-app-threshold-control-2.jpg',
+                                '8-smart-aquaponics-mqtt-app-threshold-control-2.jpg',
+                                'mqtt-app-threshold-control-2')
+                                ] %}
+
                                 <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/thumbnail.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/thumbnail.jpg') }}"
-                                            alt="thumbnail">
+                                    <a href="{{ IMG_BASE }}/{{ img_closeup }}" class="glightbox"
+                                        data-gallery="smart-aquaponics-gallery">
+                                        <img src="{{ IMG_BASE }}/{{ img }}" alt="{{ alt }}" loading="lazy"
+                                            decoding="async">
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/smart-aquaponics-architechural-diagram.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/smart-aquaponics-architechural-diagram.jpg') }}"
-                                            alt="architechural-diagram">
-                                    </a>
-                                </div>
+                                {% endfor %}
 
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/3-smart-aquaponics-schematic.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/3-smart-aquaponics-schematic.jpg') }}"
-                                            alt="schematic">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/4-smart-aquaponics-circuit-picture.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/4-smart-aquaponics-circuit-picture.jpg') }}"
-                                            alt="circuit-picture">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/5-smart-aquaponics-mqtt-app-dashboard.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/5-smart-aquaponics-mqtt-app-dashboard.jpg') }}"
-                                            alt="mqtt-app-dashboard">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/6-smart-aquaponics-mqtt-app-messages.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/6-smart-aquaponics-mqtt-app-messages.jpg') }}"
-                                            alt="mqtt-app-messages">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/7-smart-aquaponics-mqtt-app-threshold-control-1.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/7-smart-aquaponics-mqtt-app-threshold-control-1.jpg') }}"
-                                            alt="mqtt-app-threshold-control-1">
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/8-smart-aquaponics-mqtt-app-threshold-control-2.jpg') }}"
-                                        class="glightbox" data-gallery="smart-aquaponics-gallery">
-                                        <img src="{{ url_for('static', filename='img/portfolio/hardware/smart-aquaponics-system-IOTP/8-smart-aquaponics-mqtt-app-threshold-control-2.jpg') }}"
-                                            alt="mqtt-app-threshold-control-2">
-                                    </a>
-                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
