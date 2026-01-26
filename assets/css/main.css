@@ -1554,3 +1554,52 @@ button.github-button:hover svg {
     margin-bottom: 10px;
     color: var(--heading-color);
 }
+
+/* Work Experience "View more" */
+.work-experience-list {
+    overflow: hidden;
+    padding-left: 25px;
+    padding-top: 15px;
+    transition: max-height 0.35s ease;
+}
+
+.work-experience-actions {
+    margin-top: 12px;
+}
+
+.view-more-btn {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.view-more-btn:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.view-more-btn:active {
+    transform: translateY(0px);
+}
+
+.work-experience-list.is-collapsed {
+    position: relative;
+}
+
+.work-experience-list.is-collapsed::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+#education-header {
+    padding-bottom: 15px;
+}
