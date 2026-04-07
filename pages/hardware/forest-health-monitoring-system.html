@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forest Health Monitoring System</title>
+
+    <!-- Include common head -->
+    {% include 'common/head.html' %}
+</head>
+
+<body class="portfolio-details-page">
+
+    <!-- Include common header -->
+    {% include 'common/header.html' %}
+
+    {% set IMG_BASE =
+    "https://raw.githubusercontent.com/victortan102/victortan102-portfolio/main/assets/img/portfolio/hardware/forest-health-monitoring-system-INF2009"
+    %}
+
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Forest Health Monitoring System</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="{{ url_for('home.index') }}">Home</a></li>
+                        <li><a href="{{ url_for('home.index') }}#portfolio">Portfolio</a></li>
+                        <li>Hardware</li>
+                        <li class="current">Forest Health Monitoring System</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <!-- Portfolio Details Section -->
+        <section id="portfolio-details" class="portfolio-details section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+
+                            {% include 'common/swiper-config.html' %}
+
+                            <div class="swiper-wrapper align-items-center">
+
+                                {% for img_closeup, img, alt in [
+                                ('thumbnail.png', 'thumbnail.png', 'thumbnail'),
+                                ('01-forest-health-poster.png', '01-forest-health-poster.png', 'forest-health-poster'),
+                                ('02-forest-health-system=architecture-diagram.png',
+                                '02-forest-health-system=architecture-diagram.png',
+                                'forest-health-system=architecture-diagram'),
+                                ('03-forest-health-setup.png', '03-forest-health-setup.png', 'forest-health-setup'),
+                                ('04-forest-health-camera-demo.png', '04-forest-health-camera-demo.png',
+                                'forest-health-camera-demo'),
+                                ('05-forest-health-dashboard-video-clip.png',
+                                '05-forest-health-dashboard-video-clip.png', 'forest-health-dashboard-video-clip'),
+                                ('06-forest-health-dashboard-video-confidence.png',
+                                '06-forest-health-dashboard-video-confidence.png',
+                                'forest-health-dashboard-video-confidence'),
+                                ('07-forest-health-bird-audio-terminal-pi.png',
+                                '07-forest-health-bird-audio-terminal-pi.png', 'forest-health-bird-audio-terminal-pi'),
+                                ('08-forest-health-bird-audio-terminal-confidence.png',
+                                '08-forest-health-bird-audio-terminal-confidence.png',
+                                'forest-health-bird-audio-terminal-confidence'),
+                                ('09-forest-health-dashboard-audio-clip.png',
+                                '09-forest-health-dashboard-audio-clip.png', 'forest-health-dashboard-audio-clip'),
+                                ('10-forest-health-m5stick-terminal.png', '10-forest-health-m5stick-terminal.png',
+                                'forest-health-m5stick-terminal'),
+                                ('11-forest-health-dashboard-temp-humidity.png',
+                                '11-forest-health-dashboard-temp-humidity.png',
+                                'forest-health-dashboard-temp-humidity'),
+                                ('12-forest-health-dashboard-gas.png', '12-forest-health-dashboard-gas.png',
+                                'forest-health-dashboard-gas'),
+
+                                ] %}
+
+                                <div class="swiper-slide">
+                                    <a href="{{ IMG_BASE }}/{{ img_closeup }}" class="glightbox"
+                                        data-gallery="forest-health-monitoring-system-gallery">
+                                        <img src="{{ IMG_BASE }}/{{ img }}" alt="{{ alt }}" loading="lazy"
+                                            decoding="async">
+                                    </a>
+                                </div>
+
+                                {% endfor %}
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Project Information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Hardware, Edge Computing, Raspberry Pi Zero 2 W, M5 Stick
+                                    C</li>
+                                <li><strong>Language</strong>: Python</li>
+                                <li><strong>Project Date</strong>: January 2026 - April 2026</li>
+                                <li>
+                                    <a href="https://youtu.be/_53I6aZo13U" target="_blank">
+                                        <button class="youtube-button">
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg height="24" width="24" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path
+                                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                                            fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>Watch on YouTube</span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="hide">
+                                    <a href="https://github.com/victortan102/INF2009-Edge-Computing-and-Analytics-Project"
+                                        target="_blank">
+                                        <button class="github-button">
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg height="24" width="24" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.491.5.091.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.153-1.11-1.46-1.11-1.46-.907-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.891 1.527 2.341 1.086 2.91.831.091-.646.349-1.086.636-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.983 1.03-2.681-.103-.253-.446-1.27.098-2.648 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.705.115 2.504.337 1.909-1.294 2.749-1.025 2.749-1.025.545 1.378.202 2.395.099 2.648.64.698 1.03 1.59 1.03 2.681 0 3.841-2.338 4.687-4.566 4.933.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .267.18.576.688.478A10.003 10.003 0 0 0 22 12c0-5.523-4.477-10-10-10z"
+                                                            fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>View on GitHub</span>
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                            <h2>Project Introduction</h2>
+                            <p>
+                                The Forest Health Monitoring System is an edge computing-based IoT solution
+                                designed for real-time environmental monitoring using multi-modal sensing and
+                                AI-driven analytics. The system integrates audio, video, and environmental sensors to
+                                detect bird species and identify anomalies such as gas fluctuations and temperature
+                                changes.
+                                By leveraging edge devices for local inference and MQTT for efficient communication, it
+                                delivers
+                                a low-latency, cost-effective alternative to traditional cloud-dependent monitoring
+                                systems, with
+                                real-time alerts and an interactive dashboard for visualization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+
+        <!-- Additional Details Section -->
+        <section id="additional-details" class="portfolio-details section">
+            <div class="container portfolio-description" data-aos="fade-up" data-aos-delay="100">
+                <h2>🗝️ Key Features of Application</h2>
+                <ol>
+                    <li>
+                        <strong>Multi-Modal Bird Detection:</strong>
+                        Detects bird presence and species using both audio
+                        (YAMNet) and video (SSD MobileNet V2 + classification models).
+                    </li>
+
+                    <li>
+                        <strong>Real-Time Environmental Monitoring:</strong>
+                        Tracks temperature, humidity, eCO2, and
+                        TVOC levels using IoT sensors.
+                    </li>
+
+                    <li>
+                        <strong>Edge-Based Processing:</strong>
+                        Performs local inference on edge devices to reduce
+                        latency and bandwidth usage.
+                    </li>
+
+                    <li>
+                        <strong>Event-Driven MQTT Communication:</strong>
+                        Uses MQTT for efficient, real-time data
+                        transmission between devices and server.
+                    </li>
+
+                    <li>
+                        <strong>Anomaly Detection & Risk Classification:</strong>
+                        Identifies abnormal environmental
+                        conditions and classifies risk levels (Low, Medium, High).
+                    </li>
+
+                    <li>
+                        <strong>Intelligent Alert System:</strong>
+                        Triggers alerts based on thresholds, spikes, and
+                        detected anomalies.
+                    </li>
+
+                    <li>
+                        <strong>Interactive Web Dashboard:</strong>
+                        Provides real-time data visualization with charts,
+                        alerts panel, and media playback using Flask and Chart.js.
+                    </li>
+
+                    <li>
+                        <strong>Efficient Data Handling:</strong>
+                        Implements rolling averages, spike detection, and
+                        selective frame transmission to optimize performance.
+                    </li>
+                </ol>
+            </div>
+        </section><!-- /Additional Details Section -->
+    </main>
+
+    <!-- Footer -->
+    {% include 'common/footer.html' %}
+</body>
+
+</html>

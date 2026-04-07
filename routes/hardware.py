@@ -3,6 +3,11 @@ from flask import Blueprint, render_template
 hardware_bp = Blueprint("hardware", __name__, template_folder="hardware")
 
 
+@hardware_bp.route("/forest-health-monitoring-system")
+def forest_health_monitoring():
+    return render_template("hardware/forest-health-monitoring-system.html")
+
+
 @hardware_bp.route("/homedefender-raspberrypi")
 def homedefender():
     return render_template("hardware/homedefender-raspberrypi.html")
