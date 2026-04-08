@@ -48,6 +48,11 @@ def kirbyeats():
     return render_template("software/kirbyeats-food-blog.html")
 
 
+@software_bp.route("/medicalcare")
+def medicalcare():
+    return render_template("software/medicalcare.html")
+
+
 @software_bp.route("/medimate")
 def medimate():
     return render_template("software/medimate.html")
