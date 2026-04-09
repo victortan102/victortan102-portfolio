@@ -3,6 +3,13 @@ from flask import Blueprint, render_template
 software_bp = Blueprint("software", __name__, template_folder="software")
 
 
+@software_bp.route("/algorithmic-trading-strategy-development-and-optimisation")
+def algorithmic_trading():
+    return render_template(
+        "software/algorithmic-trading-strategy-development-and-optimisation.html"
+    )
+
+
 @software_bp.route("/asrea-vr-application")
 def asrea_vr():
     return render_template("software/asrea-vr-application.html")

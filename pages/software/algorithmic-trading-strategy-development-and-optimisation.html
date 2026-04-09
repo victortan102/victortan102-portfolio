@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Algorithmic Trading Strategy Development and Optimisation</title>
+
+    <!-- Include common head -->
+    {% include 'common/head.html' %}
+</head>
+
+<body class="portfolio-details-page">
+
+    <!-- Include common header -->
+    {% include 'common/header.html' %}
+
+    {% set IMG_BASE =
+    "https://raw.githubusercontent.com/victortan102/victortan102-portfolio/main/assets/img/portfolio/software/algorithmic-trading-strategy-development-and-optimisation-INF2006"
+    %}
+
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Algorithmic Trading Strategy Development and Optimisation</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="{{ url_for('home.index') }}">Home</a></li>
+                        <li><a href="{{ url_for('home.index') }}#portfolio">Portfolio</a></li>
+                        <li>Software</li>
+                        <li class="current">Algorithmic Trading Strategy</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+
+        <!-- Portfolio Details Section -->
+        <section id="portfolio-details" class="portfolio-details section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4">
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+
+                            {% include 'common/swiper-config.html' %}
+
+                            <div class="swiper-wrapper align-items-center">
+                                {% for img_closeup, img, alt in [
+                                ('thumbnail.png', 'thumbnail.png', 'thumbnail'),
+                                ('01-dataset.png', '01-dataset.png', 'dataset'),
+                                ('02-enhanced-eda.png', '02-enhanced-eda.png', 'enhanced-eda'),
+                                ('03-data-cleaning-and-prep.png', '03-data-cleaning-and-prep.png',
+                                'data-cleaning-and-prep'),
+                                ('04-computational-optimisation.png', '04-computational-optimisation.png',
+                                'computational-optimisation'),
+                                ('05-technical-indicators-used.png', '05-technical-indicators-used.png',
+                                'technical-indicators-used'),
+                                ('06-strategy.png', '06-strategy.png', 'strategy'),
+                                ('07-results-and-performance.png', '07-results-and-performance.png',
+                                'results-and-performance'),
+                                ('08-baseline-dev.png', '08-baseline-dev.png', 'baseline-dev'),
+                                ('09-enhanced-dev.png', '09-enhanced-dev.png', 'enhanced-dev'),
+                                ('10-baseline-val.png', '10-baseline-val.png', 'baseline-val'),
+                                ('11-enhanced-val.png', '11-enhanced-val.png', 'enhanced-val'),
+                                ('12-baseline-vs-enhanced.png', '12-baseline-vs-enhanced.png', 'baseline-vs-enhanced'),
+                                ('14-leaderboard-dev-full.png', '13-leaderboard-dev-closeup.png',
+                                'leaderboard-dev-full'),
+                                ('16-leaderboard-val-full.png', '15-leaderboard-val-closeup.png',
+                                'leaderboard-val-full'),
+                                ('18-leaderboard-test-full.png', '17-leaderboard-test-closeup.png',
+                                'leaderboard-test-full')
+                                ] %}
+
+                                <div class="swiper-slide">
+                                    <a href="{{ IMG_BASE }}/{{ img_closeup }}" class="glightbox"
+                                        data-gallery="algorithmic-trading-gallery">
+                                        <img src="{{ IMG_BASE }}/{{ img }}" alt="{{ alt }}" loading="lazy"
+                                            decoding="async">
+                                    </a>
+                                </div>
+
+                                {% endfor %}
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Project Information</h3>
+                            <ul>
+                                <li><strong>Category</strong>: Software, Algorithmic Trading, Big Data</li>
+                                <li><strong>Language</strong>: Python</li>
+                                <li><strong>Project Date</strong>: Jan 2026 - April 2026</li>
+                                <li>
+                                    <a href="https://youtu.be/zezbb4X99tk" target="_blank">
+                                        <button class="youtube-button">
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg height="24" width="24" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                                        <path
+                                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                                            fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>Watch on YouTube</span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="hide">
+                                    <a href="https://github.com/victortan102/INF2006-Cloud-Computing-and-Big-Data-Assignment-2"
+                                        target="_blank">
+                                        <button class="github-button">
+                                            <div class="svg-wrapper-1">
+                                                <div class="svg-wrapper">
+                                                    <svg height="24" width="24" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.491.5.091.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.153-1.11-1.46-1.11-1.46-.907-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.891 1.527 2.341 1.086 2.91.831.091-.646.349-1.086.636-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.983 1.03-2.681-.103-.253-.446-1.27.098-2.648 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.851.004 1.705.115 2.504.337 1.909-1.294 2.749-1.025 2.749-1.025.545 1.378.202 2.395.099 2.648.64.698 1.03 1.59 1.03 2.681 0 3.841-2.338 4.687-4.566 4.933.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.748 0 .267.18.576.688.478A10.003 10.003 0 0 0 22 12c0-5.523-4.477-10-10-10z"
+                                                            fill="currentColor"></path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <span>View on GitHub</span>
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <button class="ieee-xplore-button"
+                                        onclick="window.open('https://doi.org/10.48550/arXiv.2603.15848', '_blank')">
+                                        <div>
+                                            <div class="pencil"></div>
+                                            <div class="folder">
+                                                <div class="top">
+                                                    <svg viewBox="0 0 24 27">
+                                                        <path
+                                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="paper"></div>
+                                            </div>
+                                        </div>
+                                        <img src="/assets/img/ArXiv_logo.png" alt="Icon"
+                                            style="width: auto; height: 25px; z-index: 999; position: relative;">
+
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                            <h2>Project Description</h2>
+                            <p>
+                                This project focuses on the development and optimisation of an enhanced
+                                algorithmic trading strategy using large-scale financial data and NLP-based sentiment
+                                analysis.
+                                By integrating technical indicators such as trend, momentum, and volatility with FinBERT
+                                sentiment
+                                extracted from earnings call transcripts, the system generates more reliable trading
+                                signals while
+                                improving risk-adjusted performance. The solution is designed with scalability in mind,
+                                leveraging
+                                vectorised computations and optimisation techniques to efficiently process millions of
+                                data points
+                                and deliver robust, generalisable results.
+                            </p>
+                        </div>
+                        <div class="project-disclaimer" data-aos="fade-up" data-aos-delay="350">
+                            <h3>⭐ Featured on <a href="https://arxiv.org/" target="_blank">arXiv</a>
+                            </h3>
+                            <p>
+                                This report for this project was uploaded to arXiv, a free distribution service and an
+                                open-access archive
+                                for scholarly articles in the fields of physics, mathematics, computer science,
+                                quantitative biology,
+                                quantitative finance, statistics, electrical engineering and systems science, and
+                                economics.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- /Portfolio Details Section -->
+
+        <!-- Additional Details Section -->
+        <section id="additional-details" class="portfolio-details section">
+            <div class="container portfolio-description" data-aos="fade-up" data-aos-delay="100">
+                <h2>🗝️ Key Features of Application</h2>
+                <ol>
+                    <li>
+                        <strong>Multi-Factor Strategy:</strong>
+                        Combines trend, momentum, volatility, and sentiment indicators to generate robust trading
+                        signals
+                    </li>
+                    <li>
+                        <strong>FinBERT Sentiment Analysis:</strong>
+                        Utilises NLP to extract sentiment from earnings call transcripts for forward-looking insights
+                    </li>
+                    <li>
+                        <strong>Advanced Risk Management:</strong>
+                        Implements ATR-based dynamic trailing stop-loss to protect capital and reduce drawdowns
+                    </li>
+                    <li>
+                        <strong>Top-N Stock Selection:</strong>
+                        Applies cross-sectional momentum ranking to select the strongest-performing stocks
+                    </li>
+                    <li>
+                        <strong>Scalable Data Processing:</strong>
+                        Efficiently handles large-scale datasets (~2 million rows) with optimised pipelines
+                    </li>
+                    <li>
+                        <strong>Optimised Computation:</strong>
+                        Uses vectorised operations and pre-computed indicators for faster backtesting
+                    </li>
+                    <li>
+                        <strong>Comprehensive Evaluation:</strong>
+                        Assesses performance using key metrics such as return, Sharpe ratio, drawdown, and volatility
+                    </li>
+                </ol>
+            </div>
+        </section><!-- /Additional Details Section -->
+    </main>
+
+    <!-- Footer -->
+    {% include 'common/footer.html' %}
+</body>
+
+</html>
